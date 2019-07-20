@@ -1,0 +1,118 @@
+html,body,h2,h3,h4,h5,h6 {
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+h1 {
+	margin-top: 0px;
+}
+body {
+	background-color: #ffffff;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+ul input[type=text] {
+	float: right;
+	padding: 6px;
+	border: none;
+	margin-top: 8px;
+	margin-left: 8px;
+	margin-right: 8px;
+	font-size: 16px;
+}
+li {
+	float: left;
+	border-right: 1px solid #bbb;
+}
+li:last-child {
+	border-left: 1px solid #bbb;
+}
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: #111;
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+.textbox {
+	background-color: #c4ffe8;
+	width:300px;
+}
+textarea {
+	resize: none;
+}
+.error {
+	color: red;
+}
+
+#details input[type=text], input[type=password], select, textarea {
+	width: 400px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 3px solid #ccc;
+	border-radius: 4px;
+	-webkit-transition: 0.5s;
+	transition: 0.5s;
+	outline: none
+}
+#details input[type=text]:focus, input[type=password]:focus, textarea:focus {
+	border: 3px solid #555;
+}
+#details input[type=button], input[type=submit], input[type=reset] {
+	font-size: medium;
+	background-color: #444;
+	border: none;
+	color: white;
+	padding: 14px 30px;
+	text-decoration: none;
+	margin: 4px 2px;
+}
+#details input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover {
+	background-color: #555;
+}
+
+#menu {
+	border-collapse: collapse;
+	width: 100%;
+}
+#menu td, #menu th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+#menu tr:nth-child(even) {
+	background-color: #f2f2f2
+}
+#menu tr:hover {
+	background-color: #ddd;
+}
+#menu th {
+	background-color: #636363;
+	color: white;
+}
+#message {
+	border-collapse: collapse;
+	width: 100%;
+}
+#message td, #message th {
+	border: 1px solid #a3a3a3;
+	padding: 8px;
+}
+#message tr:hover {
+	background-color: #ddd;
+}
+#message th {
+	background-color: #a3a3a3;
+	color: white;
+}
