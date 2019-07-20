@@ -45,10 +45,6 @@ table {
     margin-left: auto;
     margin-right: auto;
 }
-.textbox {
-	background-color: #c4ffe8;
-	width:300px;
-}
 textarea {
 	resize: none;
 }
