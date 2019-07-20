@@ -12,8 +12,10 @@
 				return false;
 			}
 			else
-				if(!($dataName == "password"))
+				if($dataName != "password")
 					return (findDuplicate($dataName,$textout));
+				else
+					return true;
 		}
 	}
 	
@@ -36,10 +38,10 @@
 				if(mysqli_num_rows(mysqli_query($dbc,$query))){
 					if($textout)
 						print "<p class=\"error\">This $name is already used</p>";
-					return true;
+					return false;
 				}
 				else
-					return false;
+					return true;
 			}
 	}
 	
@@ -68,7 +70,7 @@
 				return true;
 		}
 	}
-
+	
 	if(isset($_POST['submitted']))
 		if(verify('user_name',false) && verify('email',false) && verify('password',false) && verifyDate(false))
 			if($dbc = mysqli_connect('localhost','root',''))
@@ -85,12 +87,13 @@
 						$_SESSION['registerSuccess'] = "true";
 						header('Location: Login.php');
 					}
+					else
+						print "<p class=\"error\"There was an error in registration.</p>";
 				}
 				else
 					print "<p class=\"error\">The database is currently unavailable.</p>";
 			else
 				print "<p class=\"error\">The server is currently unavailable.</p>";
-		
 ?>
 
 <html>
